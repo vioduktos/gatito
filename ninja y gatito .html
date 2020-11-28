@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="ninja y gatito.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("img").click(function(){
+          var temp= $(this).attr('src');
+          $(this).attr("src",$(this).attr("data-alt-src"));
+              $(this).attr("data-alt-src", temp);  
+          });
+          
+        });
+</script>
+   
+</head>
+<body>
+    <div id="container">
+        <h1>gatito</h1>
+        <p>haz clik sobre la imagen hasta formar correctamente el ninja o el gato</p>
+        <img src="cat0.png" data-alt-src="ninja0.png" alt="primer">
+        <img src="cat1.png" data-alt-src="ninja1.png" alt="segundo">
+        <img src="cat2.png" data-alt-src="ninja2.png" alt="tercero">
+        <img src="cat3.png" data-alt-src="ninja3.png" alt="cuarto">
+        <img src="cat4.png" data-alt-src="ninja4.png" alt="quinto">
+        
+    </div>
+    
+</body>
+</html>
